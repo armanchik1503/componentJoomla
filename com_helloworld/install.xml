@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.10" method="upgrade">
+
+	<name>Hello World!</name>
+	<creationDate>October 2021</creationDate>
+	<author>Kaliakyn Arman</author>
+	<authorEmail>armankaliakyn@gmail.com</authorEmail>
+	<authorUrl>http://www.example.org</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Description of the Hello World component ...</description>
+
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+	
+	<files folder="site">
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>index.html</filename>
+		<filename>helloworld.php</filename>
+	</files>
+
+	<administration>
+		<menu link='index.php?option=com_helloworld'>Hello World!</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>helloworld.php</filename>
+			<filename>controller.php</filename>
+			<folder>controllers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+	</administration>
+
+</extension>
